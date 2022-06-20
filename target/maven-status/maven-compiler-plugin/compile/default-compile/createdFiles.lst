@@ -1,4 +1,7 @@
-org\acme\qute\HelloResource.class
 org\acme\qute\ItemResource$Templates.class
-org\acme\qute\ItemResource.class
 org\acme\qute\Item.class
+org\acme\qute\HelloResource.class
+org\acme\qute\repositories\ItemRepository.class
+META-INF\panache-archive.marker
+org\acme\qute\entities\ItemEntity.class
+org\acme\qute\ItemResource.class

@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 <meta charset="UTF-8">
-<title>Qute - Items</title> 
+<title>Produkt Katalog</title>
 </head>
 <body>
-    <h1>List of Items</h1>
-    <ul>
-        {#for item in items}
-        <li>
-            {item.name}:
-            {#if item.price < 15}
-              {item.price}
-            {#else}
-              <del>{item.price}</del> <strong>{item.discountedPrice}</strong>
-            {/if}
-        </li>
-        {/for}
-    </ul>
+    <h1>Welcome</h1>
+
+    {#for item in items}
+        <div>
+            <div>{item.name}</div>
+            <div>{item.description}</div>
+            <div>{item.price}</div>
+            </br>
+        </div>
+    {/for}
 </body>
 </html>

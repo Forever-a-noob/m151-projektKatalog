@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form id="loginForm" action="javascript:callREST()">
+    <label for="username">Username</label>
+    <input type="email" id="username" placeholder="john.doe@example.com" style="display: list-item">
+    </br>
+    <label for="password">Password</label>
+    <input type="password" id="password" style="display: list-item">
+    </br>
+    <input type="submit" value="Login">
+
+    <script>
+        function callREST() {
+            fetch("/login",
+                    {
+                        method: "POST",
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                        username: username,
+                        password: password
+                    })
+                    }
+        }
+    </script>
+</form>
+</body>
+</html>

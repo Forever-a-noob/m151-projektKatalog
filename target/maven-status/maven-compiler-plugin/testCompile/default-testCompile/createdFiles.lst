@@ -1,4 +1,1 @@
-org\acme\qute\HelloResourceTest.class
-org\acme\qute\ItemsResourceIT.class
-org\acme\qute\ItemsResourceTest.class
-org\acme\qute\HelloResourceIT.class
+META-INF\panache-archive.marker
